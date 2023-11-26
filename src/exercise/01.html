@@ -6,6 +6,22 @@
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
 <!--   📜 https://github.com/mdn/js-examples/tree/master/module-examples -->
+<html>
+  <body>
+    <script type="module">
+      // ✅ extra 1: generate the root node with js only
+      const rootElement = document.createElement('div');
+      const element = document.createElement('div');
+
+      element.textContent = "Hello World";
+      element.className = "container";
+
+      document.body.append(rootElement);
+      rootElement.setAttribute("id", "root");
+      rootElement.append(element);
+    </script>
+  </body>
+</html>
 
 <!-- These next instructions are to be written in JavaScript in the <script> tag -->
 <!-- 🐨 Create a div -->
